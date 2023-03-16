@@ -1,0 +1,592 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta name="author" content="Joween Flores">
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.1.1">
+      <title>Encountered Issues</title>
+      <link rel="stylesheet" href="../assets/stylesheets/main.23b6d78a.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.23b6d78a.min.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+      <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+      <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script-->
+      <style>
+        .accordion {
+          background-color: #eee;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+        }
+        
+        .active, .accordion:hover {
+          background-color: #ccc; 
+        }
+        
+        .panel {
+          padding: 0 18px;
+          display: none;
+          background-color: white;
+          overflow: hidden;
+        }
+        
+      </style>
+      
+    </head>
+  <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip"><a href="#etl-process" class="md-skip">Skip to content</a></div>
+    <div data-md-component="announce"></div>
+    <header class="md-header" data-md-component="header">
+      <nav class="md-header__inner md-grid" aria-label="Header">
+        <a href=".." title="DSG Application Administrator Manual" class="md-header__button md-logo" aria-label="DSG Application Administrator Manual" data-md-component="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+        </a>
+        <label class="md-header__button md-icon" for="__drawer">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+        </label>
+        <div class="md-header__title" data-md-component="header-title">
+          <div class="md-header__ellipsis">
+            <div class="md-header__topic">
+              <span class="md-ellipsis">
+                DSG Application Administrator Manual
+              </span>
+            </div>
+            <div class="md-header__topic" data-md-component="header-topic">
+              <span class="md-ellipsis">Encountered Issues</span>
+            </div>
+          </div>
+        </div>
+        
+        <label class="md-header__button md-icon" for="__search">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+          <label class="md-search__overlay" for="__search"></label>
+          <div class="md-search__inner" role="search">
+            <form class="md-search__form" name="search">
+              <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+              <label class="md-search__icon md-icon" for="__search">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+              </label>
+              <nav class="md-search__options" aria-label="Search">
+                <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+                </button>
+              </nav>
+            </form>
+            <div class="md-search__output">
+              <div class="md-search__scrollwrap" data-md-scrollfix>
+                <div class="md-search-result" data-md-component="search-result">
+                  <div class="md-search-result__meta">
+                    Initializing search
+                  </div>
+                  <ol class="md-search-result__list"></ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="md-container" data-md-component="container">
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+                  <label class="md-nav__title" for="__drawer">
+                    <a href=".." title="DSG Application Administrator Manual" class="md-nav__button md-logo" aria-label="DSG Application Administrator Manual" data-md-component="logo">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+                    </a>
+                    DSG Application Administrator Manual
+                  </label>
+  
+                  <ul class="md-nav__list" data-md-scrollfix>
+                    <li class="md-nav__item"><a href="../" class="md-nav__link">Home</a></li>
+                    <li class="md-nav__item md-nav__item--active">
+                      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+                      <label class="md-nav__link md-nav__link--active" for="__toc">
+                        Encountered Issues
+                        <span class="md-nav__icon md-icon"></span>
+                      </label>
+                      <a href="../etl/" class="md-nav__link">ETL Processss</a>
+                    </li>
+                    <li class="md-nav__item"><a href="../qlik/" class="md-nav__link">Qlik Process</a></li>
+                    <!--li class="md-nav__item">
+                      <a href="../issues/" class="md-nav__link md-nav__link--active">Issues and Concerns</a>
+                    </li-->
+                    <li class="md-nav__item">
+                      <a href="../links/" class="md-nav__link">Resources</a>
+                    </li>
+                    <li class="md-nav__item">
+                      <a href="../modification/" class="md-nav__link">Modification History</a>
+                    </li>
+                    <li class="md-nav__item">
+                      <a href="../docu/" class="md-nav__link">Updating This Documentation</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>   
+          <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+            <div class="md-sidebar__scrollwrap">
+              <div class="md-sidebar__inner">
+                <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+                  <label class="md-nav__title" for="__toc">
+                    <span class="md-nav__icon md-icon"></span>
+                    List of Concerns
+                  </label>
+                  <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+                    <nav class="md-nav md-nav--secondary" aria-label="Table of contents">   
+                      <li class="md-nav__item">
+                        <a href="#cat-8" id="cat8" class="md-nav__link test7">Restart Server</a>
+                      </li>
+                      <li class="md-nav__item">
+                        <a href="#cat-1" id="cat1" class="md-nav__link">ETL has Stopped Working</a>
+                      </li>
+                      <li class="md-nav__item">
+                        <a href="#cat-2" id="cat2" class="md-nav__link">Reset Status (QLIKSENSE)</a>
+                      </li>
+                      <li class="md-nav__item">
+                        <a href="#cat-3" id="cat3" class="md-nav__link">Receipt Details & Receipt Errors</a>
+                      </li>
+                      <li class="md-nav__item">
+                        <a href="#cat-4" id="cat4" class="md-nav__link">Unable to set ETL</a> 
+                      </li>
+                      <li class="md-nav__item">
+                        <a href="#cat-5" id="cat5" class="md-nav__link">Stop Processing of Other Configure System</a>
+                      </li>
+                      <li class="md-nav__item">
+                        <a href="#cat-6" id="cat6" class="md-nav__link">No vendor filter</a>
+                      </li>
+                      <li class="md-nav__item">
+                        <a href="#cat-7" id="cat7" class="md-nav__link">QLIKSENSE user can't access</a>
+                      </li>   
+                      <li class="md-nav__item">
+                        <a href="#cat-9" id="cat9" class="md-nav__link">Node is offline</a>
+                      </li>  
+                      <li class="md-nav__item">
+                        <a href="#cat-10" id="cat10" class="md-nav__link">ETL Client has stopped working</a>
+                      </li> 
+                      <li class="md-nav__item">
+                        <a href="#cat-11" id="cat11" class="md-nav__link">ETL app did not process at 12AM</a>
+                      </li> 
+                      <li class="md-nav__item">
+                        <a href="#cat-a" id="cat12" class="md-nav__link">ETL Client has stopped working</a>
+                      </li> 
+                      <li class="md-nav__item">
+                        <a href="#cat-13" id="cat13" class="md-nav__link">ETL SHU Slow Data Extraction</a>
+                      </li> 
+                    </nav>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                <h1>Records of Encountered Issues</h1>
+                <h2 id="cat-8">Restart Server</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 1/29/2021</button>
+                  <div class="panel">
+                    <b>Application : </b> QLIKSENSE<br/>
+                    <b>Date Reported :</b> 1/29/2021 <br/>
+                    <b>Date Issue :</b> 1/26/2021<br/>
+                    <b>Date Finish :</b> 2/1/2021<br/>
+                    <b>Issue :</b>  <br/>
+                    Restart server Dated Jan 27, 2021 <br/>
+                    Stop processing Jan 27, 2021 <br/>
+                    Stop NODE - RIM <br/>
+                    <p><img alt="ETL Extract Script" loading="lazy" src="../img/seq1_config_system.png" /></p>
+                    <p><img alt="CSV files" loading="lazy" src="../img/seq1_engines.png" /></p>
+                  </div>
+                </blockquote>
+                <h2 id="cat-1">
+                  ETL has Stopped Working
+                </h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 1/30/2021</button>
+                  <div class="panel">
+                    <b id="issue-2-etl-stop-working">Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 1/30/2021 <br/>
+                    <b>Date Issue :</b> 1/30/2021<br/>
+                    <b>Date Finish :</b> 1/31/2021<br/>
+                    <blockquote>
+                      <p><img alt="" loading="lazy" src="../img/issue_2_etl_stop_working.png" /></p>
+                    </blockquote>
+                    <blockquote>
+                      <p><img alt="" loading="lazy" src="../img/issue_2_close_program.png" /></p>
+                    </blockquote>
+                  </div>
+                  <button class="accordion">Issue No. 2 - Date Reported : 3/15/2021</button>
+                  <div class="panel">
+                    <b>Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 3/15/2021 <br/>
+                    <p>We checked the ETL logs for March 14 (Sunday) and found out that it did not manage to finish.</p>
+                    <p><img alt="" loading="lazy" src="../img/issue_3_etl_logs.png" /></p>
+                    <p>We also checked ETL logs for March 15 (Monday).</p>
+                    <p><img alt="" loading="lazy" src="../img/issue_3_etl_logs_monday.png" /></p>
+                    <p>I closed it since ETL stopped working, <code>XAMPP</code> restarted.</p>
+                    <p><img alt="" loading="lazy" src="../img/issue_3_etl_xamp.png" /></p>
+                    <p>In the morning, no error has occurred yet on RIM and Central. 
+                        Then we found the error on the afternoon. Hence, I and sir Kim
+                        made a call. But QLIK is still running.</p>
+                    <p><img alt="" loading="lazy" src="../img/issue_3_rim_and_central.png" /></p>
+                    <p>Qlik <b>success</b> has been completed.</p>
+                    <p><img alt="" loading="lazy" src="../img/issue_3_success_qlik.png" /></p>
+                  </div>
+                  <button class="accordion">Issue No. 3 - Date Reported : 3/29/2021</button>
+                  <div class="panel">
+                    <b>Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 3/29/2021 <br/>
+                    <b>Date Issue :</b> 3/29/2021 <br/>
+                    <b>Date Finish :</b> 3/29/2021 <br/>
+                    <b>Issue :</b> ETL HAS STOPPED WORKING <br/>
+                    <p><img alt="" loading="lazy" src="../img/issue_7_1.png" /></p>
+                    <p><img alt="" loading="lazy" src="../img/issue_7_2.png" /></p>
+                    <p><img alt="" loading="lazy" src="../img/issue_7_3.png" /></p>
+                    I wasn't able to screenshot the XAMPP, but upon checking the notepad log, 
+                    I found out that last March 28, ETL has stopped working.
+                    <p><img alt="" loading="lazy" src="../img/issue_7_4.png" /></p>
+                    No problem was found in the QLIKSENSE app but when the ETL server
+                    restarted, QLIKSENSE failed.
+                    <p><img alt="" loading="lazy" src="../img/issue_7_5.png" /></p>
+                    QLIKSENSE failed because instead of letting QLIK have everything to be processed
+                    before restarting the ETL, we did the reverse which is restarting ETL while QLIK is still processing.
+                    <p><img alt="" loading="lazy" src="../img/issue_7_6.png" /></p>
+                  </div>
+                  <button class="accordion">Issue No. 4 - Date Reported : 2/14/2022</button>
+                  <div class="panel">
+                    <b>Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 2/14/2022 <br/>
+                    <b>Date Issue :</b> 2/14/2022 <br/>
+                    <b>Date Finish :</b> 2/14/2022 <br/>
+                    <b>Issue :</b> ETL HAS STOPPED WORKING <br/>
+                    I have encountered an ETL issue this morning (Monday February 14, 2022 - 7:55am) . 
+                    Upon accessing 10.10.175.101, I saw a prompt saying "ETL has stopped 
+                    working", so I just closed the app and opened it again. And as I checked 
+                    the ETL logs, I found that ETL did not finish at 2am as it usually does. 
+                    Attached here are the screenshots of this particular concern.
+                    <p><img alt="" loading="lazy" src="../img/etl_stopped_issue_4_1.png" /></p>
+                    <p><img alt="" loading="lazy" src="../img/etl_stopped_issue_4_2.png" /></p>
+                    
+                  </div>
+                </blockquote>
+                <h2 id="cat-2">Reset Status</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 1/30/2021</button>
+                  <div class="panel">
+                    <b id="issue-2-reset-status">Application : </b> QLIKSENSE  <br/>
+                    <b>Date Reported :</b> 1/30/2021 <br/>
+                    <b>Date Issue :</b> 1/30/2021<br/>
+                    <b>Date Finish :</b> 1/31/2021<br/>
+                    <p><img alt="" loading="lazy" src="../img/issue_2_qlik_reset.png" /></p>
+                  </div>
+                  <button class="accordion">Issue No. 2 - Date Reported : 3/16/2021</button>
+                  <div class="panel">
+                    <b>Application : </b> QLIK <br/>
+                    <b>Date Reported :</b> 3/16/2021 <br/>
+                    <b>Date Issue :</b> 3/16/2021 <br/>
+                    <b>Date Finish :</b> 3/16/2021 <br/>
+                    <p><img alt="" loading="lazy" src="../img/issue_4_1.png" /></p>
+                    <p><img alt="" loading="lazy" src="../img/issue_4_2.png" /></p>
+                  </div>
+                  <button class="accordion">Issue No. 3 - Date Reported : 3/17/2021</button>
+                    <div class="panel">
+                      <b>Application : </b> QLIK <br/>
+                      <b>Date Reported :</b> 3/17/2021 <br/>
+                      <b>Date Issue :</b> 3/17/2021 <br/>
+                      Reset 2am, QLIK server restarted at 6:25am <br/>
+                      <p><img alt="" loading="lazy" src="../img/issue_5_1.png" /></p>
+                    </div>
+                  <button class="accordion">Issue No. 4 - Date Reported : 3/22/2021</button>
+                  <div class="panel">
+                    <b>Application : </b> QLIK <br/>
+                    <b>Date Reported :</b> 3/22/2021 <br/>
+                    <b>Date Issue :</b> 3/22/2021 <br/>
+                    <b>Date Finish :</b> 3/22/2021 <br/>
+                    QLIKSENSE : RESET @7am <br/>
+                    We have a concern pertaining to QLIKSENSE. The last date process was
+                    March 19, 2021. Then I checked the ETL logs for March 19 to 22 and I
+                    did not find any error as it all showed <code>ETL FINISH</code>. 
+                    See screenshot below:
+                    <p><img alt="" loading="lazy" src="../img/issue_6_1.png" /></p>
+                    <p><img alt="" loading="lazy" src="../img/issue_6_2.png" /></p>
+                    Started @ 11:28am
+                    <p><img alt="" loading="lazy" src="../img/issue_6_3.png" /></p>
+                    Started @ 12:30am
+                    <p><img alt="" loading="lazy" src="../img/issue_6_4.png" /></p>
+                  </div>
+                </blockquote>
+                <h2 id="cat-3">Receipt Details & Receipt Errors</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 2/5/2021</button>
+                  <div class="panel">
+                    <b id="issue-2-receipt-errors">Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 2/5/2021 <br/>
+                    <b>Date Issue :</b> Jan 23 to Jan 30, 2021 <br/>
+                    <b>Date Finish :</b> 2/17/2021<br/>
+                    Receipt details & receipt errors during processing in ETL 
+                    <p><img alt="" loading="lazy" src="../img/issue_2_receipt_errors.png" /></p>
+                  </div>
+                </blockquote>
+                <h2 id="cat-4">Unable to Set ETL</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 3/17/2021</button>
+                  <div class="panel">
+                    <b id="issue-5-2">Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 3/17/2021 <br/>
+                    <b>Date Issue :</b> 3/16/2021 <br/>
+                    <b>Date Finish :</b> 
+                    <p><img alt="" loading="lazy" src="../img/issue_5_2.png" /></p>
+                    <p><img alt="" loading="lazy" src="../img/issue_5_3.png" /></p>
+                  </div>
+                </blockquote>
+                <h2 id="cat-5">CONFIGURE SYSTEM services stopped</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 8/16/2021</button>
+                  <div class="panel">
+                    <b>Application : </b> QLIKSENSE <br/>
+                    <b>Date Reported :</b> 8/16/2021 <br/>
+                    <b>Date Issue :</b> 8/15/2021 <br/>
+                    <b>Date Finish :</b>  
+                    <p><img alt="" loading="lazy" src="../img/issue_8_1.png" /></p>
+                    <b>Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 8/31/2021 <br/>
+                    <b>Date Issue :</b> 8/31/2021 <br/>
+                    <p><img alt="" loading="lazy" src="../img/issue_8_2.png" /></p>
+                  </div>
+                  <button class="accordion">Issue No. 2 - Date Reported : 3/31/2022</button>
+                  <div class="panel">
+                    <b>Application : </b> QLIKSENSE <br/>
+                    <b>Date Reported :</b> 3/31/2022 <br/>
+                    <b>Date Issue :</b> 3/31/2022 <br/>
+                    <b>Date Finish :</b> 4/01/2022  
+                    <p><img alt="" loading="lazy" src="../img/configure_system_issues.png" /></p>
+                    This is the first indicator of error that I saw yesterday (March 31, 2022)
+                    <p><img alt="" loading="lazy" src="../img/rim_stopped.png" /></p>
+                    Upon opening each of the services under <code>CONFIGURE SYSTEM</code>, I saw that the status on RIM is stopped.
+                    <p><img alt="" loading="lazy" src="../img/services_have_stopped.png" /></p>
+                    The <code>Node</code> doesn't show any sign of error, but as I checked it, it shows the services that are not 
+                    running on the <code>RIM Node</code>.
+                    <p><img alt="" loading="lazy" src="../img/etl_services_running.png" /></p>
+                    <p><img alt="" loading="lazy" src="../img/qlik_services_running.png" /></p>
+                    I tried to check on both servers (QLIK and ETL) whether the services are running or not, and the
+                    status says it's all running.
+                    <br/><br/>
+                    <p>
+                      I am not sure if the following errors are relevant to the issue, but I'd like to show these as
+                      part of my observation while monitoring.
+                    </p>
+                    <p><img alt="" loading="lazy" src="../img/application_logs.jpg" /></p>
+                    <code>PostgreSQL</code> in QLIK server
+                    <p><img alt="" loading="lazy" src="../img/reconnecting.jpg" /></p>
+                    Occured twice in the morning while I was remoting the ETL server
+                    <p><img alt="" loading="lazy" src="../img/etl_client.jpg" /></p>
+                    Prompts when I open the ETL app in the morning (the app and logs shows ETL FINISH though)
+                  </div>
+                </blockquote>
+                <h2 id="cat-6">No Vendor Filter</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 1/17/2022</button>
+                  <div class="panel">
+                    <b>Application : </b> QLIKSENSE <br/>
+                    <b>Date Reported :</b> 1/17/2022 <br/>
+                    <b>Date Issue :</b> 1/17/2022 <br/>
+                    <b>Date Finish :</b> 1/19/2022 <br/>
+                  </div>
+                  <button class="accordion">Issue No. 2 - Date Reported : 3/14/2022</button>
+                  <div class="panel">
+                    <b>Application : </b> QLIKSENSE <br/>
+                    <b>Date Reported :</b> 3/14/2022 <br/>
+                    <b>Date Issue :</b> 3/13/2022 <br/>
+                    <b>Date Finish :</b> 3/15/2022 <br/>
+                    On 14th of March 2022, we noticed that the vendor filter doesn't show any data at all. 
+                    And upon investigating the ETL error logs, we found out that there is an error upon running
+                    the vendor master file. 
+                  </div>
+                </blockquote>
+                <h2 id="cat-7">QLIKSENSE user can't access</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 1/25/2022</button>
+                  <div class="panel">
+                    <b>Application : </b> QLIKSENSE <br/>
+                    <b>Date Reported :</b> 1/25/2022 <br/>
+                    <b>Date Issue :</b> 1/25/2022 <br/>
+                    <b>Date Finish :</b> 1/25/2022 <br/>
+                  </div>
+                </blockquote>
+                <h2 id="cat-9">Node is offline</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 2/25/2022</button>
+                  <div class="panel">
+                    <b>Application : </b> QLIKSENSE <br/>
+                    <b>Date Reported :</b> 2/25/2022 <br/>
+                    <b>Date Issue :</b> 2/25/2022 <br/>
+					          <b>Date Finish :</b> 3/1/2022 <br/>
+                    <p><img alt="" loading="lazy" src="../img/cat9_issue1_1.jpg" /></p>
+                    <p><img alt="" loading="lazy" src="../img/cat9_issue1_2.jpg" /></p>
+                    
+                    On 26th of February 2022, the qlik sense repository logs located at <code>drive C:\ProgramData\Qlik\Sense\Log\Repository</code> 
+                    was checked and have it coordinated with the server admin.
+                    <p><img alt="" loading="lazy" src="../img/repository.png" /></p>
+                    On 1st of March 2022, further analysis has been made to trace the possible cause of the issue. On the server, system repository logs was checked
+                    located at <code>drive C:\ProgramData\Qlik\Sense\Log\Repository</code> and it shows that there is a failure to connect to the server. 
+                    <p><img alt="" loading="lazy" src="../img/unable_to_connect_to_remote.jpg" /></p>
+                    <p>Upon running the <code>netstat command</code> on the ETL server, the result shows that port 4444 is not ESTABLISHED. </p>
+                    <p><img alt="" loading="lazy" src="../img/port4444_issue.jpg" /></p>
+                    Afterwards, the server admin checked the IP configuration of the servers. Upon checking, he found that the gateway of the ETL server doesn't match
+                    with the qlik server's gateway. Hence, he changed the ETL server's gateway into 10.10.0.224 to match with the gateway of qlik.
+                    <p><img alt="" loading="lazy" src="../img/IPv4_gateway_224.png" /></p>
+                  </div>
+                </blockquote>
+                <h2 id="cat-a">ETL Client has stopped working</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 3/17/2022</button>
+                  <div class="panel">
+                    <b>Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 3/17/2022 <br/>
+                    <b>Date Issue :</b> 3/17/2022 <br/>
+					          <b>Date Finish :</b> 3/17/2022 <br/>
+                    I would like to report the issue that I encountered this morning which I noticed at 8:00am (March 17, 2022). As I opened the ETL server, I saw a prompt on the ETL app saying "ETL Client has stopped working". However, I wasn't able to screenshot that particular prompt as I immediately closed it. After closing it, the ETL app closed as well. With that in mind, I checked the ETL logs and I found out that the ETL processing did not finish and stopped processing at exactly 12:09 AM. I have attached here the screenshot of the ETL logs. Please see attached file. Thank you!
+                    <p><img alt="" loading="lazy" src="../img/ETL_Client_has_stopped.png" /></p>
+                  </div>
+                  <button class="accordion">Issue No. 2 - Date Reported : 4/18/2022</button>
+                  <div class="panel">
+                    <b>Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 4/18/2022 <br/>
+                    <b>Date Issue :</b> 4/16/2022 <br/>
+					          <b>Date Finish :</b> 4/20/2022 <br/>
+                    At 8AM today, while remoting the ETL Server, I noticed this prompt below on the ETL app. So I just closed it and opened again to run the customer.
+                    <p><img alt="" loading="lazy" src="../img/etl_client_stopped_working.jpg" /></p>
+                    Afterwards, I opened the logs and saw that the processing stopped at receipt on April 16, 2022 (12AM).
+                    <p><img alt="" loading="lazy" src="../img/april16_etl_logs.png" /></p>
+                    During my rerun in the afternoon of April 18, 2022, the running stopped at receipt. Then, we noticed that it keeps on running the <code>220415</code> date in which the store at that time was closed. I also checked the error details. Details in the screenshots below:
+                    <p><img alt="" loading="lazy" src="../img/etl_client_1.jpg" /></p>
+                    <p><img alt="" loading="lazy" src="../img/etl_client_2.jpg" /></p>
+                    <p><img alt="" loading="lazy" src="../img/etl_client_3.jpg" /></p>
+                    <p><img alt="" loading="lazy" src="../img/etl_client_4.jpg" /></p>
+                    <p><img alt="" loading="lazy" src="../img/etl_client_5.jpg" /></p>
+                  </div>
+                </blockquote>
+                <h2 id="cat-11">ETL app did not process at 12AM</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 3/18/2022</button>
+                  <div class="panel">
+                    <b>Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 3/18/2022 <br/>
+                    <b>Date Issue :</b> 3/18/2022 <br/>
+					          <b>Date Finish :</b> 3/18/2022 <br/>
+                    Upon opening the ETL logs at morning, I was expecting to see the current date's logs but couldn't see any. 
+                    We then found out that it was just due to closing of the ETL app yesterday. Although it was fine to close it for as long as we <code>START</code> the Daily Loading for tomorrow's date.
+                  </div>
+                </blockquote>
+                <h2 id="cat-13">ETL SHU Slow Data Extraction</h2>
+                <blockquote>
+                  <button class="accordion">Issue No. 1 - Date Reported : 1/11/2019</button>
+                  <div class="panel">
+                    <b>Application : </b> ETL <br/>
+                    <b>Date Reported :</b> 1/11/2019 <br/>
+                    <b>Date Issue :</b> 1/11/2019 <br/>
+					          <b>Date Finish :</b> 1/11/2019 <br/>
+					          <b>Job :</b> On hand Inventory <br/>
+                    ACTION TAKEN:<br/>
+
+                    *Replaced the current driver from OLEDB driver to DBS UDB iSeries
+                    Driver.Net Provider to improve performance<br/>
+                    
+                    *Removed the Group by function in the SQL query<br/>
+                    
+                    
+                    STATUS:<br/>
+                    *Problem is fixed<br/>
+                    *Still under observation for errors and bugs
+                    
+                  </div>
+                </blockquote>
+                <script>
+                  var acc = document.getElementsByClassName("accordion");
+                  var i;
+                  for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var panel = this.nextElementSibling;
+                      if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                      } else {
+                        panel.style.display = "block";
+                      }
+                    });
+                  }
+                </script>
+              </article>
+            </div>
+          </div>
+        </main>
+        <footer class="md-footer">
+          <nav class="md-footer__inner md-grid" aria-label="Footer">
+            <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home" rel="prev">
+              <div class="md-footer__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+              </div>
+              <div class="md-footer__title">
+                <div class="md-ellipsis">
+                  <span class="md-footer__direction">
+                    Previous
+                  </span>
+                  Home
+                </div>
+              </div>
+            </a>
+            <a href="../qlik/" class="md-footer__link md-footer__link--next" aria-label="Next: Qlik Process" rel="next">
+              <div class="md-footer__title">
+                <div class="md-ellipsis">
+                  <span class="md-footer__direction">
+                    Next
+                  </span>
+                  Resources
+                </div>
+              </div>
+              <div class="md-footer__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+              </div>
+            </a>
+          </nav>
+          <div class="md-footer-meta md-typeset">
+            <div class="md-footer-meta__inner md-grid">
+              <div class="md-copyright">
+                Made with
+                <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+                  Material for MkDocs
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      
+      <div class="md-dialog" data-md-component="dialog">
+        <div class="md-dialog__inner md-typeset"></div>
+      </div>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.c7dec7e7.min.js"}</script>
+      <script src="../assets/javascripts/bundle.da79ceb7.min.js"></script>
+  </body>
+</html>
